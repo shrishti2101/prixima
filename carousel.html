@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+        <!-- carousel -->
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+        <script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        
+        <style>
+          body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+          .first-banner{
+            background-color: black;
+            color: aliceblue;
+            position: relative;
+          }
+          .first-banner h1{
+            font-weight: 700;
+            font-size: 64px;
+            left:15%;
+            position: absolute;
+            bottom:40%;
+          }
+          .first-banner h6{
+            position: absolute;
+            bottom: 60%;
+            left: 15%;
+            font-size:16px;
+            font-weight: 700;
+          
+            text-transform: uppercase;
+          }
+          .banner-btn{
+            position: absolute;
+            left: 15%;
+             bottom:30%;
+            background-color:orangered;
+            color: white;
+          }
+          .btn-outline-light{
+            position: absolute;
+            left: 25%;
+            bottom:30%;
+            background-color:white;
+            color:black;
+          }
+          .second-banner{color: white;
+            position: relative;
+            text-align: center;
+          }
+          .second-banner .banner-btn {
+    bottom: 30%;
+    left: 45%;
+}
+         .second-banner h1 {
+    color: white;
+    left: 35%;
+    position: absolute;
+    bottom: 40%;
+    font-weight: 700;
+    font-size: 64px;
+}
+      .second-banner .btn-outline-light {
+    bottom: 30%;
+    left: 55%;
+}
+         .second-banner h6 {
+    left: 45%;
+    position: absolute;
+    bottom: 60%;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="first-banner">
+                    <!-- <img src="./images/bg_banner1.jpg" alt="" class="img-fluid"> -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>We Craft Digital Experiences</h6>
+                            <h1>Design driven for <br>Professionals</h1>
+                            <div class="row">
+                                <div class="col-6">
+                                  <a href="" class="btn banner-btn">Get Started</a>
+                                   <a href="" class="btn btn-outline-light">Our work</a>
+                                </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="second-banner">
+                    <img src="./images/bg_banner2.jpg" alt="" class="img-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>We Craft Digital Experiences</h6>
+                            <h1>Design driven for <br>Professionals</h1>
+                            <div class="row">
+                                <div class="col-6">
+                                  <a href="" class="btn banner-btn">Get Started</a>
+                                  <a href="" class="btn btn-outline-light">Our work</a>
+                                </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+          $('.owl-carousel').owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            nav:true,
+            // autoplay:true
+          });
+        </script>
+        </div>
+    </body>
+</html>
